@@ -1,10 +1,10 @@
-                                                              /*C program for lexical analyser:
-                                                                        Keywords:
-                                                                        Identifier:
-                                                                        Number : Integers
-                                                                        Relational Operators: <, <=, >, >=, ==, !=
-                                                                        Multi line Comments:
-                                                              */
+/*C program for lexical analyser:
+      Keywords:
+      Identifier:
+      Number : Integers
+      Relational Operators: <, <=, >, >=, ==, !=
+      Multi line Comments:
+*/                                                              
 
 #include <stdio.h>
 #include <ctype.h>
