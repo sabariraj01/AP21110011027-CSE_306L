@@ -4,13 +4,15 @@ num	[0-9]\.[0-9]
 
 
 %{
-#include<stdio.h> 
-#include<string.h>
-int cnt=0,i=0,j=0; 
-char st[10][10];
-int n=0,com=0,scom=0; 
-FILE *ifp,*ofp;
-int lookup(char st[10][10],char *id,int n);
+	#include<stdio.h> 
+	#include<string.h>
+
+	int cnt=0,i=0,j=0; 
+	char st[10][10];
+	int n=0,com=0,scom=0; 
+
+	FILE *ifp,*ofp;
+	int lookup(char st[10][10],char *id,int n);
 %}
  
  
@@ -19,8 +21,9 @@ int lookup(char st[10][10],char *id,int n);
 "//"	{scom=1;fprintf(yyout,"\n Single line comment..");} 
 "/*"	{com=1;fprintf(yyout,"\n Multi line comment starts..");}
 "*/"	{com=0;fprintf(yyout,"\n Multi line comment ends..");} 
-int | float | char | double |  void  | 
-main	{if(!com&&!scom) fprintf(yyout," \n %s is keyword",yytext);}
+
+int | float | char | double |  void  |  return  |  main	
+	{if(!com&&!scom) fprintf(yyout," \n %s is keyword",yytext);}
 "<="	{if (!com&&!scom) fprintf(yyout,"\n %s is Relational operator Lessthan or Equal to operator",yytext);} 
 "<"	{if(!com&&!scom) fprintf(yyout,"\n %s is Relational operator Lessthan operator",yytext);}
 ">="	{if(!com) fprintf(yyout,"\n %s is Relational operator Greaterthan or Equal to operator",yytext);} 
@@ -39,7 +42,7 @@ main	{if(!com&&!scom) fprintf(yyout," \n %s is keyword",yytext);}
     		}
 	   }
         }
-{num}   {if(!com&&!scom) fprintf(yyout,"\n %s is float",yytext);}
+{num}     {if(!com&&!scom) fprintf(yyout,"\n %s is float",yytext);}
 {digit}   {if (!com&&!scom) fprintf(yyout,"\n %s is digit",yytext);}
 .
 %%
