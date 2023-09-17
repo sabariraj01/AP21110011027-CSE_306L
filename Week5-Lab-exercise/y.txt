@@ -24,4 +24,4 @@
  Multi line comment ends..
  printf is identifier
  Hello is identifier
- return is identifier
+ return is keyword
