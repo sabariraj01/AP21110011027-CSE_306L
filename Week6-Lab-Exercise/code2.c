@@ -1,6 +1,6 @@
 // 2.Construct Recursive Descent Parser for the grammar and verify the acceptability of
 // the following strings and You can manually eliminate Left Recursion if any in the grammar.
-// :  i.(a,(a,a))  and  ii.(a,((a,a),(a,a)))
+// :  i.(a,(a,a))  and  ii.(a,((a,a),(a,a))) 
 
 //Productions of the grammar :  
 // G = ({S, L}, {(, ), a, ,}, 
