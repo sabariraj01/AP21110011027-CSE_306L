@@ -29,16 +29,16 @@ int main()
     printf("Enter the string : \n");
     scanf("%s", string);
     ip = string;
-    printf("\n\nInput\t\t\tAction\n--------------------------------\n");
+    printf("\n\nInput\t\t\tAction\n-----------------------------------------------\n");
 
     if (S() && *ip == '\0')
     {
-        printf("--------------------------------");
+        printf("-----------------------------------------------");
         printf("\nString is successfully parsed\n\n");
     }
     else
     {
-        printf("\n--------------------------------\n");
+        printf("\n-----------------------------------------------\n");
         printf("Error in parsing String!!!\n\n");
     }
     return 0;
