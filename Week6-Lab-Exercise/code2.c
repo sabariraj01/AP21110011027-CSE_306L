@@ -2,7 +2,7 @@
 // the following strings and You can manually eliminate Left Recursion if any in the grammar.
 // :  i.(a,(a,a))  and  ii.(a,((a,a),(a,a)))
 
-//Productions of the grammar : 
+//Productions of the grammar :  
 // G = ({S, L}, {(, ), a, ,}, 
 // {S → (L) | a ; L→ L, S | S}, S) 
 
