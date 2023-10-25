@@ -1,0 +1,4 @@
+Implement LALR parser using LEX and YACC for the following Grammar by
+specifying proper precedence for operators:
+
+E → E+E | E-E | E*E | E/E | -E | (E) | digit
