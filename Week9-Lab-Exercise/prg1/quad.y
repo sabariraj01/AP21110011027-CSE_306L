@@ -57,5 +57,5 @@ main()
 }
 yyerror(char *s)
 {
-      printf(&quot;%s&quot;,s);
+      printf("%s",s);
 }
